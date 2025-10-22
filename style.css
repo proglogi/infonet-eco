@@ -1,0 +1,14 @@
+.tabela02 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+.tabela03 {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+#sobre, #contato, #perguntas, #reclamacao, #envio_sugestao, #analise {
+    display: none;
+}
