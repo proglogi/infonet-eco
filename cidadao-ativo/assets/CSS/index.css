@@ -53,7 +53,7 @@ body {
 
 /* Seção principal */
 .hero {
-    background-image: url('https://images.unsplash.com/photo-1505842465776-3d90f616310d');
+    background-image: url('https://imagens.ebc.com.br/MHjR6dP3gjkeR8NFpMOOGsLCjR8=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/pzzb0281.jpg?itok=LCcxWfn_');
     background-size: cover;
     background-position: center;
     height: 90vh;
@@ -237,7 +237,7 @@ body {
 /* ====== PÁGINA SOBRE NÓS ====== */
 
 .hero-sobre {
-    background-image: url('https://images.unsplash.com/photo-1573497019578-83b9cda92b1b?auto=format&fit=crop&w=1600&q=60');
+    background-image: url('/cidadao-ativo/assets/IMG/telemarketing.jpg');
     background-size: cover;
     background-position: center;
     height: 70vh;
