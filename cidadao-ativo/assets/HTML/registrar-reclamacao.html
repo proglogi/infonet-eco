@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Reclamação - Cidadão Ativo</title>
+    <link rel="stylesheet" href="/cidadao-ativo/assets/CSS/index.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="navbar">
+        <div class="logo">🌀 Cidadão Ativo</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="sobre-nos.html">Sobre Nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="perguntas-frequentes.html">Perguntas Frequentes</a></li>
+                <li><a href="RegistrarReclamacao.html" class="ativo">Registrar Reclamação</a></li>
+                <li><a href="enviar-sugestoes.html">Enviar Sugestão</a></li>
+                <li><a href="analise-resposta.html">Análise e Resposta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero-reclamacao">
+        <div class="overlay">
+            <h1>Registre Sua Reclamação ou Sugestão</h1>
+            <p>Contribua para a melhoria dos serviços públicos enviando suas reclamações e sugestões detalhadas. Sua participação é fundamental para um governo mais eficiente e transparente.</p>
+            <a href="#form-reclamacao" class="btn-amarelo">Comece Agora</a>
+        </div>
+    </section>
+
+    <!-- Por Que Registrar -->
+    <section class="bloco-registrar amarelo">
+        <div class="container">
+            <div class="texto">
+                <h2>Por Que Registrar?</h2>
+                <p>Ao registrar sua reclamação ou sugestão, você ajuda o governo a identificar problemas e oportunidades de melhoria nos serviços públicos, garantindo respostas rápidas e eficazes.</p>
+                <a href="sobre-nos.html" class="btn">Saiba Mais</a>
+            </div>
+            <div class="imagem">
+                <img src="https://images.pexels.com/photos/261621/pexels-photo-261621.jpeg" alt="Formulário sendo preenchido com caneta">
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios -->
+    <section class="beneficios">
+        <div class="container">
+            <div class="item">
+                <img src="https://img.freepik.com/fotos-premium/lupa-em-papel-de-graficos-de-tabelas_39768-2750.jpg" alt="Lupa e gráfico de barras">
+                <h3>Transparência e Melhoria</h3>
+                <p>Permite identificar falhas e aprimorar continuamente os serviços públicos com base nas demandas reais da população.</p>
+            </div>
+
+            <div class="item">
+                <img src="https://midias.correiobraziliense.com.br/_midias/jpg/2025/06/23/675x450/1_parada_gay-54817433.jpg?20250623201959?20250623201959" alt="Pessoas com bandeiras levantadas">
+                <h3>Participação Cidadã</h3>
+                <p>Amplia o engajamento da sociedade e fortalece o papel do cidadão como agente ativo de transformação social.</p>
+            </div>
+
+            <div class="item">
+                <img src="https://www.cnmp.mp.br/portal/images/noticias/2020/junho/sede_CNMP_15_anos_1.JPG">
+                <h3>Comunicação Direta</h3>
+                <p>Facilita o diálogo entre cidadãos e órgãos públicos, garantindo mais eficiência nas respostas e soluções.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário -->
+    <section id="form-reclamacao" class="form-reclamacao">
+        <h2>Envie Sua Reclamação</h2>
+        <p>Preencha o formulário abaixo com as informações solicitadas para registrar sua manifestação.</p>
+
+        <form action="enviarReclamacao.php" method="POST" class="formulario">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="servico">Serviço Público:</label>
+            <input type="text" id="servico" name="servico" placeholder="Ex: Transporte, Saúde, Educação..." required>
+
+            <label for="mensagem">Descrição da Reclamação:</label>
+            <textarea id="mensagem" name="mensagem" rows="6" placeholder="Descreva o problema de forma detalhada..." required></textarea>
+
+            <button type="submit" class="btn-laranja">Enviar Reclamação</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>Copyright © 2025. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
