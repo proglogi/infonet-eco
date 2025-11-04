@@ -196,7 +196,6 @@ body {
     color: #fff;
     text-align: center;
     padding: 1.2rem 0;
-    margin-top: 2rem;
     font-size: 0.95rem;
 }
 
@@ -308,6 +307,78 @@ body {
     border-radius: 8px;
 }
 
+/* COMO FUNCIONA */
+.como-funciona-sobre {
+    background-color: #F4B840;
+    padding: 4rem 8%;
+}
+
+.como-funciona-sobre .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.como-funciona-sobre .texto {
+    flex: 1 1 400px;
+}
+
+.como-funciona-sobre .texto h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #1E3A63;
+}
+
+.como-funciona-sobre .texto p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.como-funciona-sobre .imagem {
+    flex: 1 1 400px;
+    text-align: center;
+}
+
+.como-funciona-sobre .imagem img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 8px;
+}
+
+/* COMPROMISSO COM A COMUNIDADE */
+.compromisso {
+    background-color: #F4B840;
+    padding: 4rem 8%;
+}
+
+.compromisso .container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.compromisso .texto h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #1E3A63;
+}
+
+.compromisso .texto p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .como-funciona-sobre .container {
+        flex-direction: column;
+    }
+}
+
 /* Destaque no menu ativo */
 .menu .ativo {
     color: #FFB200;
@@ -330,3 +401,436 @@ body {
     }
 }
 
+/* ====== PÁGINA CONTATO ====== */
+
+.hero-contato {
+    background-image: url('https://blog.facens.br/wp-content/uploads/2021/04/bibliotecas.png');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+.hero-contato .overlay {
+    background-color: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    padding: 3rem;
+    border-radius: 8px;
+}
+
+.como-funciona-contato {
+    background-color: #F4B840;
+    padding: 4rem 8%;
+}
+
+.como-funciona-contato .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.como-funciona-contato .texto {
+    flex: 1 1 400px;
+}
+
+.como-funciona-contato .texto h2 {
+    color: #1E3A63;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.como-funciona-contato .texto p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.como-funciona-contato .imagem {
+    flex: 1 1 400px;
+    text-align: center;
+}
+
+.como-funciona-contato .imagem img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 8px;
+}
+
+/* CONTATO DIRETO */
+.contato-direto {
+    background-color: #F4B840;
+    padding: 4rem 8%;
+}
+
+.contato-direto .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contato-direto .bloco {
+    flex: 1 1 300px;
+}
+
+.contato-direto h3 {
+    color: #1E3A63;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.contato-direto p {
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+}
+
+.contato-direto img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .como-funciona-contato .container,
+    .contato-direto .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contato-direto img {
+        margin: 1rem auto;
+    }
+}
+
+/* ====== PÁGINA PERGUNTAS FREQUENTES ====== */
+
+.hero-perguntas {
+    background-image: url('https://img.odcdn.com.br/wp-content/uploads/2024/12/templo-de-poseidon-1-1920x1080.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+.hero-perguntas .overlay {
+    background-color: rgba(0, 0, 0, 0.55);
+    padding: 3rem;
+    border-radius: 8px;
+    max-width: 850px;
+}
+
+.hero-perguntas h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-perguntas p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Blocos de perguntas */
+.faq-bloco {
+    padding: 4rem 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-bloco .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1100px;
+}
+
+.faq-bloco.amarelo {
+    background-color: #F4B840;
+}
+
+.faq-bloco .texto {
+    flex: 1 1 400px;
+}
+
+.faq-bloco .texto h2 {
+    color: #1E3A63;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.faq-bloco .texto p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.faq-bloco .imagem {
+    flex: 1 1 400px;
+    text-align: center;
+}
+
+.faq-bloco .imagem img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 8px;
+}
+
+/* Inverter ordem imagem-texto */
+.faq-bloco.invertido .container {
+    flex-direction: row-reverse;
+}
+
+/* Grid inferior */
+.faq-grid {
+    background-color: #F4B840;
+    padding: 4rem 8%;
+}
+
+.faq-grid .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.faq-grid .item {
+    flex: 1 1 300px;
+    background-color: transparent;
+}
+
+.faq-grid h3 {
+    color: #1E3A63;
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.faq-grid p {
+    font-size: 1.05rem;
+    color: #333;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .faq-bloco .container {
+        flex-direction: column;
+    }
+
+    .faq-grid .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .faq-bloco .imagem img {
+        max-width: 100%;
+    }
+}
+
+/* ====== PÁGINA REGISTRAR RECLAMAÇÃO ====== */
+
+.hero-reclamacao {
+    background-image: url('https://www.estadao.com.br/resizer/ArSrg_eVl5hGezoCDUO8Pm0t5zo=/arc-anglerfish-arc2-prod-estadao/public/M232AQ42PFLQVDIVN6SR4RKWBA.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-reclamacao .overlay {
+    background-color: rgba(0, 0, 0, 0.55);
+    padding: 3rem;
+    border-radius: 8px;
+    max-width: 850px;
+}
+
+.hero-reclamacao h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-reclamacao p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.btn-amarelo {
+    background-color: #F4B840;
+    color: #1E3A63;
+    padding: 0.8rem 1.6rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-amarelo:hover {
+    background-color: #e0a730;
+}
+
+/* Seção Por Que Registrar */
+.bloco-registrar {
+    padding: 4rem 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloco-registrar .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1100px;
+}
+
+.bloco-registrar.amarelo {
+    background-color: #F4B840;
+}
+
+.bloco-registrar .texto {
+    flex: 1 1 400px;
+}
+
+.bloco-registrar .texto h2 {
+    color: #1E3A63;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.bloco-registrar .texto p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.bloco-registrar .imagem img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 8px;
+}
+
+/* Benefícios */
+.beneficios {
+    background-color: #F4B840;
+    padding: 4rem 8%;
+}
+
+.beneficios .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.beneficios .item {
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+.beneficios img {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.beneficios img:hover {
+    transform: scale(1.03);
+}
+
+.beneficios h3 {
+    color: #1E3A63;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+}
+
+.beneficios p {
+    color: #333;
+    font-size: 1.05rem;
+    margin-top: 0.5rem;
+}
+
+/* Formulário */
+.form-reclamacao {
+    padding: 4rem 8%;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.form-reclamacao h2 {
+    font-size: 2rem;
+    color: #1E3A63;
+    margin-bottom: 1rem;
+}
+
+.form-reclamacao p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.formulario {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.formulario label {
+    display: block;
+    font-weight: bold;
+    margin-top: 1rem;
+    color: #1E3A63;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.formulario button {
+    margin-top: 1.5rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .bloco-registrar .container {
+        flex-direction: column;
+    }
+
+    .beneficios .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
