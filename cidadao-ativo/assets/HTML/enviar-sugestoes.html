@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enviar Sugestão - Cidadão Ativo</title>
+  <link rel="stylesheet" href="/cidadao-ativo/assets/CSS/index.css">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="navbar">
+    <div class="logo">🌀 Cidadão Ativo</div>
+    <nav>
+        <ul class="sugestao-nav-links">
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="sobre-nos.html">Sobre Nós</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="perguntas-frequentes.html">Perguntas Frequentes</a></li>
+            <li><a href="enviar-sugestoes.html" class="active">Enviar Sugestão</a></li>
+            <li><a href="analise-resposta.html">Análise e Resposta</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="sugestao-hero">
+    <div class="sugestao-hero-content">
+      <h2>Participe e Faça a Diferença</h2>
+      <p>Registre suas reclamações e sugestões sobre os serviços públicos para que possamos melhorar juntos.</p>
+      <a href="#formSugestao" class="sugestao-btn">Comece Agora</a>
+    </div>
+  </section>
+
+  <!-- Informativo -->
+  <section class="sugestao-info">
+    <div class="sugestao-info-text">
+      <h2>Por Que Enviar uma Sugestão?</h2>
+      <p>Suas sugestões são essenciais para que o governo possa identificar melhorias, inovar processos e criar soluções mais eficazes. Cada ideia contribui para um serviço público mais eficiente e participativo.</p>
+      <a href="#" class="sugestao-btn">Saiba Mais</a>
+    </div>
+    <div class="sugestao-info-img">
+      <img src="https://videocdn.cdnpk.net/videos/7754ae4e-fe6e-4d33-ae31-f2557bc2fe9f/horizontal/thumbnails/large.jpg" alt="Pessoa escrevendo uma sugestão">
+    </div>
+  </section>
+
+  <!-- Formulário -->
+  <section id="formSugestao" class="sugestao-form-section">
+    <h2>Envie Sua Sugestão</h2>
+    <p>Preencha o formulário abaixo com suas informações e detalhes da sugestão. Nossa equipe analisará e encaminhará para o setor responsável.</p>
+
+    <form class="sugestao-form">
+      <div class="sugestao-form-group">
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+
+      <div class="sugestao-form-group">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="sugestao-form-group">
+        <label for="categoria">Categoria da Sugestão:</label>
+        <select id="categoria" name="categoria" required>
+          <option value="">Selecione...</option>
+          <option value="educacao">Educação</option>
+          <option value="saude">Saúde</option>
+          <option value="transporte">Transporte</option>
+          <option value="seguranca">Segurança</option>
+          <option value="outros">Outros</option>
+        </select>
+      </div>
+
+      <div class="sugestao-form-group">
+        <label for="mensagem">Sua Sugestão:</label>
+        <textarea id="mensagem" name="mensagem" rows="6" placeholder="Descreva sua sugestão..." required></textarea>
+      </div>
+
+      <button type="submit" class="sugestao-btn sugestao-btn-submit">Enviar Sugestão</button>
+    </form>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="sugestao-footer">
+    <p>© 2025 Cidadão Ativo. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>

@@ -192,11 +192,11 @@ body {
 
 /* Rodapé */
 .footer {
-    background-color: #7BA9A3;
+    background-color: #2a3b6a;
     color: #fff;
     text-align: center;
-    padding: 1.2rem 0;
-    font-size: 0.95rem;
+    padding: 15px;
+    font-size: 14px;
 }
 
 /* Responsividade */
@@ -236,7 +236,7 @@ body {
 /* ====== PÁGINA SOBRE NÓS ====== */
 
 .hero-sobre {
-    background-image: url('/cidadao-ativo/assets/IMG/telemarketing.jpg');
+    background-image: url('https://unity-connect.com/wp-content/uploads/2021/12/customer-service-representative-outsourcing-feature-image.jpg');
     background-size: cover;
     background-position: center;
     height: 70vh;
@@ -404,7 +404,7 @@ body {
 /* ====== PÁGINA CONTATO ====== */
 
 .hero-contato {
-    background-image: url('https://blog.facens.br/wp-content/uploads/2021/04/bibliotecas.png');
+    background-image: url('https://marilianoticia.com.br/wp-content/uploads/2022/06/WhatsApp-Image-2022-06-14-at-11.33.18-1.jpeg');
     background-size: cover;
     background-position: center;
     height: 70vh;
@@ -518,7 +518,7 @@ body {
 /* ====== PÁGINA PERGUNTAS FREQUENTES ====== */
 
 .hero-perguntas {
-    background-image: url('https://img.odcdn.com.br/wp-content/uploads/2024/12/templo-de-poseidon-1-1920x1080.jpg');
+    background-image: url('https://imagens.ebc.com.br/JCPB_Wg_k1SvkcWoMxEkeY2kL_Q=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2024/03/13/img_6553.jpg?itok=K-iKo24p');
     background-size: cover;
     background-position: center;
     height: 70vh;
@@ -645,192 +645,175 @@ body {
     }
 }
 
-/* ====== PÁGINA REGISTRAR RECLAMAÇÃO ====== */
+/* ================================
+   PÁGINA ENVIAR SUGESTÃO
+   ================================ */
 
-.hero-reclamacao {
-    background-image: url('https://www.estadao.com.br/resizer/ArSrg_eVl5hGezoCDUO8Pm0t5zo=/arc-anglerfish-arc2-prod-estadao/public/M232AQ42PFLQVDIVN6SR4RKWBA.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    position: relative;
+/* --- Cabeçalho --- */
+.sugestao-header {
+  font-family: Arial, sans-serif;
 }
 
-.hero-reclamacao .overlay {
-    background-color: rgba(0, 0, 0, 0.55);
-    padding: 3rem;
-    border-radius: 8px;
-    max-width: 850px;
+.sugestao-navbar {
+  background-color: #2a3b6a;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
 }
 
-.hero-reclamacao h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+.sugestao-nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
 }
 
-.hero-reclamacao p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 2rem;
+.sugestao-nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-.btn-amarelo {
-    background-color: #F4B840;
-    color: #1E3A63;
-    padding: 0.8rem 1.6rem;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+.sugestao-nav-links li a:hover,
+.sugestao-nav-links li a.active {
+  color: #f9c33b;
 }
 
-.btn-amarelo:hover {
-    background-color: #e0a730;
+/* --- Hero --- */
+.sugestao-hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('/cidadao-ativo/assets/IMG/hands-together.jpg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 120px 20px;
 }
 
-/* Seção Por Que Registrar */
-.bloco-registrar {
-    padding: 4rem 8%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.sugestao-hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
 }
 
-.bloco-registrar .container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 3rem;
-    max-width: 1100px;
+.sugestao-hero-content p {
+  max-width: 700px;
+  margin: 0 auto 25px auto;
+  line-height: 1.6;
 }
 
-.bloco-registrar.amarelo {
-    background-color: #F4B840;
+.sugestao-btn {
+  background-color: #f7931e;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-.bloco-registrar .texto {
-    flex: 1 1 400px;
+.sugestao-btn:hover {
+  background-color: #cf730f;
 }
 
-.bloco-registrar .texto h2 {
-    color: #1E3A63;
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+/* --- Seção Informativa --- */
+.sugestao-info {
+  background-color: #f9c33b;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 60px 40px;
+  gap: 30px;
 }
 
-.bloco-registrar .texto p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
+.sugestao-info-text {
+  max-width: 480px;
 }
 
-.bloco-registrar .imagem img {
-    width: 100%;
-    max-width: 420px;
-    border-radius: 8px;
+.sugestao-info-text h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
 }
 
-/* Benefícios */
-.beneficios {
-    background-color: #F4B840;
-    padding: 4rem 8%;
+.sugestao-info-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
-.beneficios .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    max-width: 1100px;
-    margin: 0 auto;
+.sugestao-info-img img {
+  max-width: 420px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.25);
 }
 
-.beneficios .item {
-    flex: 1 1 300px;
-    text-align: center;
+/* --- Formulário --- */
+.sugestao-form-section {
+  background-color: #fffaf0;
+  text-align: center;
+  padding: 70px 40px;
 }
 
-.beneficios img {
-    width: 100%;
-    max-width: 320px;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
+.sugestao-form-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
-.beneficios img:hover {
-    transform: scale(1.03);
+.sugestao-form-section p {
+  color: #444;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
 }
 
-.beneficios h3 {
-    color: #1E3A63;
-    margin-top: 1rem;
-    font-size: 1.4rem;
+.sugestao-form {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
 }
 
-.beneficios p {
-    color: #333;
-    font-size: 1.05rem;
-    margin-top: 0.5rem;
+.sugestao-form-group {
+  margin-bottom: 25px;
 }
 
-/* Formulário */
-.form-reclamacao {
-    padding: 4rem 8%;
-    text-align: center;
-    background-color: #f9f9f9;
+.sugestao-form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
 }
 
-.form-reclamacao h2 {
-    font-size: 2rem;
-    color: #1E3A63;
-    margin-bottom: 1rem;
+.sugestao-form-group input,
+.sugestao-form-group select,
+.sugestao-form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.2s;
 }
 
-.form-reclamacao p {
-    margin-bottom: 2rem;
-    font-size: 1.1rem;
-    color: #555;
+.sugestao-form-group input:focus,
+.sugestao-form-group textarea:focus,
+.sugestao-form-group select:focus {
+  border-color: #f7931e;
+  box-shadow: 0 0 5px rgba(247,147,30,0.5);
 }
 
-.formulario {
-    max-width: 700px;
-    margin: 0 auto;
-    text-align: left;
+.sugestao-btn-submit {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
+  padding: 12px 30px;
+  font-size: 16px;
 }
 
-.formulario label {
-    display: block;
-    font-weight: bold;
-    margin-top: 1rem;
-    color: #1E3A63;
-}
-
-.formulario input,
-.formulario textarea {
-    width: 100%;
-    padding: 0.8rem;
-    margin-top: 0.5rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 1rem;
-}
-
-.formulario button {
-    margin-top: 1.5rem;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .bloco-registrar .container {
-        flex-direction: column;
-    }
-
-    .beneficios .container {
-        flex-direction: column;
-        align-items: center;
-    }
+/* --- Rodapé --- */
+.sugestao-footer {
+  background-color: #2a3b6a;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
 }
